@@ -11,6 +11,8 @@
 
     <node name="unity_manual_control_filtered_republisher" pkg="ros_tcp_endpoint" type="republish_manual_control.py" output="screen" />
 
+    <node name="republish_heading_orientation_from_imu" pkg="ros_tcp_endpoint" type="republish_heading_orientation_from_imu.py" output="screen" />
+
     <!-- <node name="unity_image_compressor_node" pkg="image_transport" type="republish" 
 		args="raw in:=/sensor/camera compressed out:=/sensor/camera" output="screen" />
 
