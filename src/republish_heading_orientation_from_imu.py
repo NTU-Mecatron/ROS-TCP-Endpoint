@@ -37,7 +37,7 @@ if __name__ == '__main__':
     rospy.init_node('republish_heading_orientation_from_imu', anonymous=True)
 
     # Publishers
-    heading_pub = rospy.Publisher('/pixhawk/vehicle_status/heading', Float32, queue_size=10)
+    heading_pub = rospy.Publisher('/pixhawk/vehicle_status/heading_ned_deg', Float32, queue_size=10)
     orientation_pub = rospy.Publisher('/pixhawk/vehicle_status/orientation', QuaternionStamped, queue_size=10)
 
     # Subscriber
